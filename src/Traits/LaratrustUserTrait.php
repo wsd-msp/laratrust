@@ -273,11 +273,12 @@ trait LaratrustUserTrait
      * @param  string|bool  $team      Team name or requiredAll roles.
      * @param  bool  $requireAll All permissions in the array are required.
      * @return bool
+	 * @removed Removed to prevent conflicts with built-in function
      */
-    public function can($permission, $team = null, $requireAll = false)
+    /*public function can($permission, $team = null, $requireAll = false)
     {
         return $this->hasPermission($permission, $team, $requireAll);
-    }
+    }*/
 
     /**
      * Check if user has a permission by its name.
@@ -286,11 +287,12 @@ trait LaratrustUserTrait
      * @param  string|bool  $team  Team name or requiredAll roles.
      * @param  bool  $requireAll  All permissions in the array are required.
      * @return bool
+	 * @removed Removed to prevent conflicts with built-in function
      */
-    public function isAbleTo($permission, $team = null, $requireAll = false)
+    /*public function isAbleTo($permission, $team = null, $requireAll = false)
     {
         return $this->hasPermission($permission, $team, $requireAll);
-    }
+    }*/
 
     /**
      * Checks role(s) and permission(s).
